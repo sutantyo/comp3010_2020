@@ -65,7 +65,8 @@ A new sub-window titled `Git Repositories` will open (on the bottom left corner 
 <img src="/images/git-9-import-project.png" width="600">
 </p>
 
-7. The project should now be shown under the `Package Explorer`, and you can start modifying it.
+7. The project should now be shown under the `Package Explorer`, and you can start modifying it. In the sccreenshot below, I pulled both folders
+which added an empty `codes` folder. I am not sure how to fix this, but I don't think it matters that much anyway.
 
 <p align="center">
 <img src="/images/git-11-project-explorer.png" width="320">
