@@ -20,7 +20,7 @@ First, we need to show the `Git Repositories` sub-window. On Eclipse, select
 > Window -> Show View -> Other -> Git -> Git Repositories
 
 <p align="center">
-<img src="/images/git-1-show-other.png" width="300">
+<img src="/images/git-1-show-other.png" width="500">
 <img src="/images/git-2-show-git-repo.png" width="300">
 </p>
 
@@ -28,45 +28,45 @@ A new sub-window titled `Git Repositories` will open on the bottom left corner (
 1. Click on `Clone a Git repository` 
 
 <p align="center">
-<img src="/images/git-3-repo-window.png" width="220">
+<img src="/images/git-3-git-repo-window.png" width="300">
 </p>
 
 2. On the new window that pops up (Source Git Repository), enter `https://github.com/sutantyo/comp3010_2020` as the URI and click `Next`. 
 
 <p align="center">
-<img src="/images/git-4-clone-repo.png" width="400">
+<img src="/images/git-4-clone-repo.png" width="500">
 </p>
 
 3. On the next page (Branch Selection), select the master branch if it hasn't already been ticked, and click `Next`.
 
 <p align="center">
-<img src="/images/git-5-clone-repo.png" width="400">
+<img src="/images/git-5-clone-repo.png" width="500">
 </p>
 
 
 4. On the next page (Local Destination), you can change the local directory if you want to, and then click `Finish`.
 
 <p align="center">
-<img src="/images/git-6-clone-repo.png" width="400">
+<img src="/images/git-6-clone-repo.png" width="500">
 </p>
 
 
 5. Once you have cloned the repository, you should see the `comp333_2019 [master]` repository in the `Git Repositories` sub-window.
 
 <p align="center">
-<img src="/images/git-7-import-project.png" width="400">
+<img src="/images/git-7-import-project.png" width="500">
 </p>
 
 6. Right click on this repo, and then select `Import Projects...`. You can click `Finish` on the newly opened window, unless there is any setting you want to change (I don't think there is any need). 
 
 <p align="center">
-<img src="/images/git-8-import-project.png" width="400">
+<img src="/images/git-8-import-project.png" width="500">
 </p>
 
 7. The project should now be shown under the `Package Explorer`, and you can start modifying it.
 
 <p align="center">
-<img src="/images/git-9-import-project.png" width="220">
+<img src="/images/git-9-import-project.png" width="420">
 </p>
 
 
