@@ -26,7 +26,7 @@ First, we need to show the `Git Repositories` sub-window. On Eclipse, select
 <img src="/images/git-2-show-git-repo.png" width="240">
 </p>
 
-A new sub-window titled `Git Repositories` will open on the bottom left corner (by default). To clone this repository, follow these steps: 
+A new sub-window titled `Git Repositories` will open (on the bottom left corner by default). To clone this repository, follow these steps: 
 1. Click on `Clone a Git repository` 
 
 <p align="center">
@@ -42,43 +42,43 @@ A new sub-window titled `Git Repositories` will open on the bottom left corner (
 3. On the next page (Branch Selection), select the master branch if it hasn't already been ticked, and click `Next`.
 
 <p align="center">
-<img src="/images/git-5-clone-repo.png" width="500">
+<img src="/images/git-5-clone-repo.png" width="380">
 </p>
 
 
 4. On the next page (Local Destination), you can change the local directory if you want to, and then click `Finish`.
 
 <p align="center">
-<img src="/images/git-6-clone-repo.png" width="400">
+<img src="/images/git-6-clone-repo.png" width="440">
 </p>
 
 
-5. Once you have cloned the repository, you should see the `comp3010_2020 [master]` repository in the `Git Repositories` sub-window.
-
+5. Once you have cloned the repository, you should see the `comp3010_2020 [master]` repository in the `Git Repositories` sub-window. Right click on this repo, and then select `Import Projects...`. 
 <p align="center">
 <img src="/images/git-7-import-project.png" width="620">
 </p>
 
-6. Right click on this repo, and then select `Import Projects...`. You can click `Finish` on the newly opened window, unless there is any setting you want to change (I don't think there is any need). 
+6. On the newly opened window, you have the option of choosing `comp3010_2020/codes` folder (which contains just the Eclipse project) and/or the
+`comp3010_2020` folder (which contains the whole repository). 
 
 <p align="center">
-<img src="/images/git-8-import-project.png" width="600">
+<img src="/images/git-9-import-project.png" width="600">
 </p>
 
 7. The project should now be shown under the `Package Explorer`, and you can start modifying it.
 
 <p align="center">
-<img src="/images/git-9-import-project.png" width="420">
+<img src="/images/git-11-project-explorer.png" width="320">
 </p>
 
 
 ## Updating your repository 
 
-To pull the new files whenever the repository is updated, you simply right-click on the repository under `Git Repositories`
+To pull the new files whenever the repository is updated, you can simply right-click on the repository under `Git Repositories`
 sub-window and select `Pull`.
 
 <p align="center">
-<img src="/images/git-10-pull.png" width="440">
+<img src="/images/git-10-pull.png" width="520">
 </p>
 
 The files in your project should be automatically updated after you perform the pull.
