@@ -67,9 +67,13 @@ public class GraphTest {
 	 * @param the starting vertex a
 	 */
 	public static void DFS(Vertex a) {
+		
+		/* Complete the code */
+		
+		// you need to output the current vertex with this line,
+		// but you can place it wherever you think is appropriate
 		System.out.print(a.getID() + " ");
 
-			/* Complete the code */
 	}
 	
 	/** Perform a BFS traversal of a connected component in a graph, 
