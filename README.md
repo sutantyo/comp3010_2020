@@ -15,4 +15,68 @@ Every week, if there are any Java source code that you can use in the workshops 
 
 The following is based on the tutorial on https://www.vogella.com/tutorials/EclipseGit/article.html. Feel free to follow the tutorial if you want a more complete understanding, but this section should be enough for COMP3010. The following guide (particularly the screenshots) were written using a MacOS, so there could be some differences with other operating systems, but the differences should be minimal.
 
-First, we need to show the Git Repositories sub-window. On Eclipse, select
+First, we need to show the `Git Repositories` sub-window. On Eclipse, select
+
+> Window -> Show View -> Other -> Git -> Git Repositories
+
+<p align="center">
+<img src="/images/git-1-show-other.png" width="300">
+<img src="/images/git-2-show-git-repo.png" width="300">
+</p>
+
+A new sub-window titled `Git Repositories` will open on the bottom left corner (by default). To clone this repository, follow these steps: 
+1. Click on `Clone a Git repository` 
+
+<p align="center">
+<img src="/images/git-3-repo-window.png" width="220">
+</p>
+
+2. On the new window that pops up (Source Git Repository), enter `https://github.com/sutantyo/comp3010_2020` as the URI and click `Next`. 
+
+<p align="center">
+<img src="/images/git-4-clone-repo.png" width="400">
+</p>
+
+3. On the next page (Branch Selection), select the master branch if it hasn't already been ticked, and click `Next`.
+
+<p align="center">
+<img src="/images/git-5-clone-repo.png" width="400">
+</p>
+
+
+4. On the next page (Local Destination), you can change the local directory if you want to, and then click `Finish`.
+
+<p align="center">
+<img src="/images/git-6-clone-repo.png" width="400">
+</p>
+
+
+5. Once you have cloned the repository, you should see the `comp333_2019 [master]` repository in the `Git Repositories` sub-window.
+
+<p align="center">
+<img src="/images/git-7-import-project.png" width="400">
+</p>
+
+6. Right click on this repo, and then select `Import Projects...`. You can click `Finish` on the newly opened window, unless there is any setting you want to change (I don't think there is any need). 
+
+<p align="center">
+<img src="/images/git-8-import-project.png" width="400">
+</p>
+
+7. The project should now be shown under the `Package Explorer`, and you can start modifying it.
+
+<p align="center">
+<img src="/images/git-9-import-project.png" width="220">
+</p>
+
+
+## Updating your repository 
+
+To pull the new files whenever the repository is updated, you simply right-click on the repository under `Git Repositories`
+sub-window and select `Pull`.
+
+<p align="center">
+<img src="/images/git-10-pull.png" width="360">
+</p>
+
+The files in your project should be automatically updated. 
