@@ -3,6 +3,7 @@ package week1;
 import graph.*;
 
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Queue;
 import java.util.TreeMap;
 
@@ -41,6 +42,7 @@ public class GraphTest {
 		addEdge(5,7,0);
 		
 		// perform a DFS
+		g.unmarkAll();
 		DFS(vertexList.get(1));
 		System.out.println();
 		
@@ -67,12 +69,16 @@ public class GraphTest {
 	 * @param the starting vertex a
 	 */
 	public static void DFS(Vertex a) {
+	
+		a.setMarked();
+		System.out.print(a.getID() + " ");
 		
+		for(Vertex v : a.getNeighbours().keySet()) {
+			if (!v.isMarked())
+				DFS(v);
+		}
 		/* Complete the code */
 		
-		// you need to output the current vertex with this line,
-		// but you can place it wherever you think is appropriate
-		System.out.print(a.getID() + " ");
 
 	}
 	

@@ -1,19 +1,15 @@
 package assg1;
 
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.Assert.*;
 
 import java.io.FileReader;
 import java.util.Scanner;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.Timeout;
+import org.junit.Before;
+import org.junit.Test;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class SolverTest {
+public class SolverTest {
 
 	private static Solver s = new Solver();
 	private static int h;
@@ -35,13 +31,12 @@ class SolverTest {
 		return expected;
 	}
 
-	@BeforeAll public static void initialize() {
+	@Before 
+	public void initialize() {
 		s = new Solver();
 	}
 	
-	@Test
-	@Order(1)
-	@Timeout(100)
+	@Test (timeout=100)
 	public void testSmall_1() {
 		try {
 			expected = readSolution(PATH + "test_case_01.out");
@@ -61,9 +56,7 @@ class SolverTest {
 		}
 	}
 
-	@Test
-	@Order(2)
-	@Timeout(100)
+	@Test (timeout=100)
 	public void testSmall_2() {
 		try {
 			readSolution(PATH + "test_case_02.out");
@@ -83,9 +76,7 @@ class SolverTest {
 		}
 	}	
 	
-	@Test
-	@Order(3)
-	@Timeout(100)
+	@Test(timeout=100)
 	public void testSmall_3() {
 		try {
 			readSolution(PATH + "test_case_03.out");
@@ -105,9 +96,7 @@ class SolverTest {
 		}
 	}	
 
-	@Test
-	@Order(4)
-	@Timeout(100)
+	@Test (timeout=100)
 	public void testSmall_4() {
 		try {
 			readSolution(PATH + "test_case_04.out");
@@ -127,9 +116,7 @@ class SolverTest {
 		}
 	}	
 
-	@Test
-	@Order(5)
-	@Timeout(1000)
+	@Test (timeout=1000)
 	public void testMedium_1() {
 		try {
 			readSolution(PATH + "test_case_05.out");
@@ -149,9 +136,7 @@ class SolverTest {
 		}
 	}	
 	
-	@Test()
-	@Order(6)
-	@Timeout(1000)
+	@Test (timeout=1000)
 	public void testMedium_2() {
 		try {
 			readSolution(PATH + "test_case_06.out");
@@ -171,9 +156,7 @@ class SolverTest {
 		}
 	}	
 	
-	@Test
-	@Order(7)
-	@Timeout(1000)
+	@Test (timeout=1000)
 	public void testMedium_3() {
 		try {
 			readSolution(PATH + "test_case_07.out");
@@ -193,9 +176,7 @@ class SolverTest {
 		}
 	}	
 	
-	@Test
-	@Order(8)
-	@Timeout(1000)
+	@Test (timeout=1000)
 	public void testMedium_4() {
 		try {
 			readSolution(PATH + "test_case_08.out");
@@ -215,9 +196,7 @@ class SolverTest {
 		}
 	}	
 	
-	@Test
-	@Order(9)
-	@Timeout(100000)
+	@Test (timeout=100000)
 	public void testLarge_1() {
 		try {
 			readSolution(PATH + "test_case_09.out");
@@ -237,9 +216,7 @@ class SolverTest {
 		}
 	}	
 	
-	@Test
-	@Order(10)
-	@Timeout(100000)
+	@Test (timeout=100000)
 	public void testLarge_2() {
 		try {
 			readSolution(PATH + "test_case_10.out");

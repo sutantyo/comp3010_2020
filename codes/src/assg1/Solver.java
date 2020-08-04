@@ -21,7 +21,6 @@ public class Solver {
 	 */
 	public String[][] solve(String infile){
 		
-		infile = "codes/src/assg1/data/test_case_01.in";
 		/*
 		 Here is a simple try-catch block for readData.
 		 If you don't know what try/catch and exceptions are,
