@@ -235,5 +235,65 @@ public class SolverTest {
 			}
 		}
 	}	
+	
+	@Test (timeout=100000)
+	public void testLarge_3() {
+		try {
+			readSolution(PATH + "test_case_15x15_1.out");
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		String[][] actual = s.solve(PATH + "test_case_15x15_1.in");
+		assertNotNull(actual);
+		assertEquals(actual.length,h);
+		assertNotNull(actual[0]);
+		assertEquals(actual[0].length,w);
+		for(int i = 0; i < h; i++) {
+			for(int j = 0; j < w; j++) {
+				assertEquals(actual[i][j],expected[i][j]);
+			}
+		}
+	}	
+	
+	@Test (timeout=100000)
+	public void testLarge_4() {
+		try {
+			readSolution(PATH + "test_case_15x15_2.out");
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		String[][] actual = s.solve(PATH + "test_case_15x15_2.in");
+		assertNotNull(actual);
+		assertEquals(actual.length,h);
+		assertNotNull(actual[0]);
+		assertEquals(actual[0].length,w);
+		for(int i = 0; i < h; i++) {
+			for(int j = 0; j < w; j++) {
+				assertEquals(actual[i][j],expected[i][j]);
+			}
+		}
+	}	
+	
+	@Test (timeout=100000)
+	public void testLarge_5() {
+		try {
+			readSolution(PATH + "test_case_20x20_1.out");
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		String[][] actual = s.solve(PATH + "test_case_20x20_1.in");
+		assertNotNull(actual);
+		assertEquals(actual.length,h);
+		assertNotNull(actual[0]);
+		assertEquals(actual[0].length,w);
+		for(int i = 0; i < h; i++) {
+			for(int j = 0; j < w; j++) {
+				assertEquals(actual[i][j],expected[i][j]);
+			}
+		}
+	}	
 
 }
