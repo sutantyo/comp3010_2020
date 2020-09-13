@@ -10,7 +10,7 @@ public class SolverTest {
 	private static Solver s;
 
 	// change the path as necessary
-	private String PATH = "src/secret2/data/";
+	private String PATH = "src/data/";
 	
 	@Before 
 	public void initialize() {
