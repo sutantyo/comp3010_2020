@@ -79,7 +79,7 @@ public class ShortestPath {
 		visited.add(current);
 		
 		// each iteration visits a new vertex, so we only need to do this N-1 times
-		// (where N is the number of vertices)
+		// (where N is the number of vertices) - this is correct, don't modify the next line
 		for (int count = 0; count < vertexList.size()-1; count++) {
 			
 			// look at all the neighbours of the current vertex
@@ -87,9 +87,9 @@ public class ShortestPath {
 				int weight = current.getNeighbours().get(v);
 				pq.add(new Edge(current,v,weight));
 				if (!m.containsKey(v))
-					m.put(v, weight);
+					m.put(v, weight+m.get(current));
 				else {
-					if (m.get(current)+weight < m.get(v)) {
+					if (m.get(current) < m.get(v)) {
 						m.put(v, weight);
 					}
 				}
@@ -97,9 +97,7 @@ public class ShortestPath {
 			
 			// now find the cheapest vertex to go to
 			Edge best = pq.poll();
-			while (visited.contains(best.getSource()) && visited.contains(best.getEnd())) {
-				best = pq.poll();
-			}
+			
 			current = best.getEnd();
 			visited.add(current);
 		}

@@ -30,9 +30,11 @@ public class Edge implements Comparable<Edge>{
 	public Vertex getSource() {
 		return this.source;
 	}
+
 	public Vertex getEnd() {
 		return this.end;
 	}
+
 	public int getWeight() {
 		return this.weight;
 	}
