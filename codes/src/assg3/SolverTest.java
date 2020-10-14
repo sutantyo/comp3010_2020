@@ -28,7 +28,7 @@ public class SolverTest {
 	
 	@Test (timeout=500)
 	public void test_p3_1() {
-		int[] expected = {20,105};
+		int[] expected = {20,120};
 		int[] actual = s.solve_3(PATH + "p3_1.in");
 		assertEquals(expected[0],actual[0]);
 		assertEquals(expected[1],actual[1]);
@@ -36,7 +36,7 @@ public class SolverTest {
 
 	@Test (timeout=500)
 	public void test_p3_2() {
-		int[] expected = {20,120};
+		int[] expected = {20,105};
 		int[] actual = s.solve_3(PATH + "p3_2.in");
 		assertEquals(expected[0],actual[0]);
 		assertEquals(expected[1],actual[1]);
