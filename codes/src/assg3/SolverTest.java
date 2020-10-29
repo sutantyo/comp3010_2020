@@ -147,7 +147,7 @@ public class SolverTest {
 		assertEquals(expected[1],actual[1]);
 	}
 	
-	@Test (timeout=1000)
+	@Test (timeout=2000)
 	public void test_p3_10() {
 		s = new Solver();
 		int[] expected = {150,397716};
